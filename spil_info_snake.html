@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonas Schøn Henriksen | Multimediedesigner</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/spil_info.css">
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <nav class="navbar">
+      <a href="index.html" class="logo">Jonas Schøn Henriksen</a>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="spil_liste.html">Spil/Projekter</a></li>
+        <li><a href="index.html#om">Om Mig</a></li>
+        <li><a href="index.html#kompetencer">Kompetencer</a></li>
+        <li><a href="index.html#erfaring">Erfaring</a></li>
+        <li><a href="index.html#uddannelse">Uddannelse</a></li>
+        <li><a href="index.html#kontakt">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <button id="theme-toggle" class="theme-toggle-btn">
+    <img id="theme-icon" src="assets/sun.png" alt="Skift Tema">
+  </button>
+
+  <!-- Spil Info Sektion -->
+  <section class="spil-info container">
+    <div class="spil-info-layout">
+      <!-- Venstre side med billeder -->
+      <div class="spil-billeder">
+        <img id="billede" src="assets/game/snake/Screenshot1.png" alt="Spil billede">
+      </div>
+      
+      <!-- Højre side med spil informationer -->
+      <div class="spil-detaljer">
+        <h2>Snake</h2>
+        <ul>
+          <li><strong>Udgivelsesdato:</strong> 2024</li>
+          <li><strong>Platforme:</strong> WEB</li>
+          <li><strong>Made with:</strong> HTML,CSS,JavaScript</li>
+          <li><strong>Udvikler:</strong> Jonas Schøn Henriksen</li>
+        </ul>
+
+        <a href="webapp/snake game/index.html" class="spil-knap">Spil</a>
+      </div>
+    </div>
+  
+    <!-- Kasse under til beskrivelse af spillet -->
+    <div class="spil-beskrivelse">
+      <h3>Om Spillet</h3>
+      <p>Spillet er et originalt Snake-spil, hvor jeg har eksperimenteret med at tilføje nogle ekstra funktioner for at tilpasse det til ens ønsker. Selvfølgelig er der også et highscore-system, så du kan konkurrere og forsøge at slå dine rekorder.</p>
+    </div>
+  </section>
+  
+
+  <!-- footer -->
+  <footer id="footer">
+    <div class="container">
+      <p>&copy; 2024 Jonas Schøn Henriksen. Alle rettigheder forbeholdes.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
+

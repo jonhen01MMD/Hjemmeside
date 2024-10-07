@@ -1,0 +1,104 @@
+/* ----------------- Specialt lavet til Spil liste siden ----------------- */
+/* Spil & Projekter sektion */
+.spil-sektion {
+  padding: 80px 0;
+}
+
+.spil-sektion h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+/* Spil liste styling */
+.spil-liste {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.spil-item {
+  display: flex;
+  align-items: center;
+  color: #c7d5e0;
+  padding: 15px 50px 15px 30px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgb(57, 57, 57); 
+  transition: transform 0.3s;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.spil-item:hover {
+  transform: scale(1.02);
+}
+
+.spil-billede {
+  width: 150px;
+  height: 100px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.spil-info {
+  flex: 1;
+}
+
+.spil-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.spil-info p {
+  font-size: 1.1rem;
+  margin: 5px 0;
+}
+
+.platform,
+.udgivelse,
+.madewith {
+  color: #ffae00; 
+}
+
+.game-link {
+  text-decoration: none;
+  display: block;
+  transition: transform 0.2s ease-in-out;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+  }
+  
+  video {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }  
+
+
+
+/* Light and Dark System */
+    /* Light Theme */
+    body.light-theme .spil-sektion h2 {
+      color: #000000;
+    }
+
+
+    /* Dark Theme */
+    body.Dark-theme .spil-sektion h2 {
+      color: #ffffff;
+    }
+
+    /* Dark Mode */
+    body.dark-theme video {
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
+    }
+  

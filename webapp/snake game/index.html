@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="highScores">
+            <h2>High Scores</h2>
+            <div id="leaderboardCategory">
+                <label for="category">Leaderboard:</label>
+                <select id="category">
+                    <option value="all" selected>All-Time</option>
+                    <option value="today">Today</option>
+                    <option value="week">This Week</option>
+                </select>
+            </div>
+            <ul id="scoreList"></ul>
+            <button id="clearHighScoresButton">Clear High Scores</button>
+        </div>
+        <div id="gameArea">
+            <h1>Snake Game</h1>
+            <div id="scoreBoard">Score: 0</div>
+            <canvas id="gameCanvas" width="400" height="400"></canvas>
+            <div id="difficultyContainer">
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="easy">Easy</option>
+                    <option value="medium" selected>Medium</option>
+                    <option value="hard">Hard</option>
+                </select>
+            </div>
+            <!-- Food Control -->
+            <div id="foodControlContainer">
+                <label for="foodCount">Number of Food Items (Max: 100):</label>
+                <input type="number" id="foodCount" min="1" max="100" value="1">
+                <button id="updateFoodCountButton">Update</button>
+            </div>
+            <button id="pauseButton">Pause</button>
+            <!-- Options Button -->
+            <button id="optionsButton">Options</button>
+        </div>
+    </div>
+
+    <!-- entering player name -->
+    <div id="nameModal" class="modal">
+        <div class="modal-content">
+            <h2>New High Score!</h2>
+            <p>Enter your name:</p>
+            <input type="text" id="playerName" maxlength="20">
+            <button id="submitName">Submit</button>
+        </div>
+    </div>
+
+    <!-- Options -->
+    <div id="optionsModal" class="modal">
+        <div class="modal-content">
+            <h2>Options</h2>
+            <div>
+                <input type="checkbox" id="godMode">
+                <label for="godMode">God Mode (Cannot Die)</label>
+            </div>
+            <div>
+                <label for="snakeColor">Snake Color:</label>
+                <input type="color" id="snakeColor" value="#a8e063">
+            </div>
+            <div>
+                <input type="checkbox" id="toggleGrid" checked>
+                <label for="toggleGrid">Show Grid</label>
+            </div>
+            <div>
+                <input type="checkbox" id="wallWrapping" checked>
+                <label for="wallWrapping">Enable Wall Wrapping</label>
+            </div>
+            <div>
+                <label for="backgroundTheme">Background Theme:</label>
+                <select id="backgroundTheme">
+                    <option value="default" selected>Default</option>
+                    <option value="night">Night Mode</option>
+                    <option value="desert">Desert</option>
+                    <option value="space">Space</option>
+                </select>
+            </div>
+            <button id="closeOptions">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
